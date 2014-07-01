@@ -159,6 +159,7 @@
     <Compile Include="Areas\Admin\Controllers\ConsoleController.cs" />
     <Compile Include="Controllers\ExtendedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProduceController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Exception Handling\ErrorMessageHandler.cs" />
     <Compile Include="Exception Handling\ExceptionDetail.cs" />
@@ -175,9 +176,15 @@
     <Compile Include="IoC\TransactionCallHandlerAttribute.cs" />
     <Compile Include="IoC\UnityControllerFactory.cs" />
     <Compile Include="Models\Demo.cs" />
-    <Compile Include="Models\MVCDbContext.cs" />
+    <Compile Include="Models\GeneralMovieInfo.cs" />
+    <Compile Include="Models\WXSSKDbContext.cs" />
+    <Compile Include="Models\Produce.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IProductRepository.cs" />
+    <Compile Include="Repository\ProductRepository.cs" />
+    <Compile Include="Service\IProduceService.cs" />
     <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Service\ProduceService.cs" />
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Service\ServiceBase.cs" />
   </ItemGroup>
