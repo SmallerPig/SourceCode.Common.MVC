@@ -1,0 +1,88 @@
+.treeWrapper{
+	position:relative;
+	-moz-user-select: none;  
+	-webkit-user-select: none;  
+	-o-user-select: none;
+	user-select: none; 
+}
+
+.treeWrapper .treePack{
+	position:relative;
+	font-size:12px;
+	line-height:16px;
+	padding:8px 8px 8px 32px;
+	border:none 0px;
+	border-radius:4px;
+	background:#fff;
+	margin-bottom:4px;
+	display:block;
+	box-shadow:rgba(0,0,0,0.25) 0px 0px 0px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px -48px 32px -32px;
+	outline:none;
+	cursor:pointer;
+	box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	background-image:url(../media/icon_folder.png);
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+
+.treeWrapper .treePack[opened]{
+	background-image:url(../media/icon_folderWithFile.png);
+}
+
+.treeWrapper .treePack:hover{
+	box-shadow:rgba(0,195,0,1) 0px 0px 2px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.15) 0px -48px 32px -32px;
+}
+
+.treeWrapper .treePack:active{
+	box-shadow:rgba(0,95,175,1) 0px 0px 2px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.15) 0px -48px 32px -32px;
+}
+
+.treeWrapper .treePackContent{
+	position:relative;
+	display:block;
+	height:0px;
+	margin-left:0px;
+	overflow:hidden;
+	opacity:0;
+}
+
+.treeWrapper .treePack[opened]+.treePackContent{
+	height:auto;
+	margin-left:16px;
+	overflow:visible;
+	opacity:1;
+	transition:opacity ease-out 0.3s, margin-left ease-out 0.3s ;
+}
+
+.treeWrapper .treeItem{
+	position:relative;
+	font-size:12px;
+	line-height:16px;
+	padding:8px 8px 8px 32px;
+	border:none 0px;
+	border-radius:4px;
+	background:#fff;
+	margin-bottom:4px;
+	display:block;
+	box-shadow:rgba(0,0,0,0.25) 0px 0px 0px 1px;
+	outline:none;
+	cursor:pointer;
+	box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	background-image:url(../media/icon_file.png);
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+
+.treeWrapper .treeItem:hover{
+	box-shadow:rgba(0,195,0,1) 0px 0px 2px 1px;
+}
+
+.treeWrapper .treeItem:active , .treeItem:focus{
+	box-shadow:rgba(0,95,175,1) 0px 0px 2px 1px;
+}

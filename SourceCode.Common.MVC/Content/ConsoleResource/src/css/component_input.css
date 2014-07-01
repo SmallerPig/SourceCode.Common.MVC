@@ -1,0 +1,100 @@
+
+/*----------输入框----------*/
+
+.inputText{
+	font-size:12px;
+	line-height:16px;
+	height:32px;
+	padding:8px 8px;
+	border:none 0px;
+	border-radius:4px;
+	background:#fff;
+	margin:0px;
+	display:inline-block;
+	box-shadow:rgba(0,0,0,0.25) 0px 0px 0px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px 24px 16px -16px;
+	outline:none;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.inputText:hover{
+	box-shadow:rgba(0,195,0,1) 0px 0px 2px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px 24px 16px -16px;
+}
+.inputText:focus{
+	box-shadow:rgba(0,95,175,1) 0px 0px 2px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px 24px 16px -16px;
+}
+.inputText[error]{
+	box-shadow:rgba(255,0,0,1) 0px 0px 2px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px 24px 16px -16px;
+}
+
+/*--状态--*/
+
+.inputText[leftIcon]{
+	padding-left:32px;
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+/*----------普通按钮----------*/
+
+.inputButton{
+	outline:none;
+	text-decoration:none;
+	font-size:12px;
+	line-height:16px;
+	padding:8px 16px;
+	border:none 0px;
+	border-radius:4px;
+	background:#fff;
+	box-shadow:rgba(0,0,0,0.25) 0px 0px 0px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px -48px 32px -32px;
+	cursor:pointer;
+	display:inline-block;
+	text-align:center;
+	outline:none;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	margin:0px;
+}
+.inputButton:hover{
+	box-shadow:rgba(0,195,0,1) 0px 0px 2px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px -48px 32px -32px;
+}
+.inputButton:active , .inputButton:focus{
+	box-shadow:rgba(0,95,175,1) 0px 0px 2px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px -48px 32px -32px;
+}
+.inputButton[error]{
+	box-shadow:rgba(255,0,0,1) 0px 0px 2px 1px, inset rgba(255,255,255,0.6) 0px 0px 0px 1px, inset rgba(0,0,0,0.10) 0px -48px 32px -32px;
+}
+
+/*--状态--*/
+
+.inputButton[leftIcon]{
+	padding-left:32px;
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+.inputButton[topIcon]{
+	padding-top:32px;
+	background-position:top center;
+	background-repeat:no-repeat;
+}
+
+.inputButton[rightIcon]{
+	padding-right:32px;
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+.inputButton[bottomIcon]{
+	padding-bottom:32px;
+	background-position:top center;
+	background-repeat:no-repeat;
+}
+
+.inputButton[centerIcon]{
+	background-position:center center;
+	background-repeat:no-repeat;
+}

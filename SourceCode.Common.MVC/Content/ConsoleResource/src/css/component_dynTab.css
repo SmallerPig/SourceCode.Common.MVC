@@ -1,0 +1,80 @@
+.dynTabWrapper{
+	position:relative;
+	-moz-user-select: none;  
+	-webkit-user-select: none;  
+	-o-user-select: none;  
+	-ms-user-select: none;  
+	user-select: none; 
+}
+
+.dynTabWrapper .tabItem{
+	position:relative;
+	display:block;
+	float:left;
+	margin-right:4px;
+}
+
+.dynTabWrapper .tabItem .tabItemContent{
+	position:relative;
+	height:32px;
+	padding:8px  56px 0px 16px;
+	line-height:16px;
+	font-size:12px;
+	border-radius:4px 4px 0px 0px;
+	background:#FFF;
+	display:block;
+	cursor:pointer;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	max-width:160px;
+	box-shadow: inset #f5f5f5 0px -48px 32px -32px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.dynTabWrapper .tabItem .tabItemContent:hover{
+	box-shadow:inset rgba(0,195,0,1) 0px -2px 0px 0px , inset #f5f5f5 0px -48px 32px -32px;
+}
+
+.dynTabWrapper .tabItem .tabItemContent:active{
+	box-shadow:inset rgba(0,95,175,1) 0px -2px 0px 0px , inset #f5f5f5 0px -48px 32px -32px;
+}
+
+.dynTabWrapper .tabItem[opened] .tabItemContent{
+	box-shadow:inset #cb0000 0px -2px 0px 0px , inset #f5f5f5 0px -48px 32px -32px;
+}
+
+.dynTabWrapper .tabClose{
+	position:absolute;
+	cursor:pointer;
+	top:4px;
+	right:4px;
+	height:24px;
+	width:24px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image:url(../media/icon_close_small.png);
+}
+
+.dynTabWrapper .tabRefresh{
+	position:absolute;
+	cursor:pointer;
+	top:4px;
+	right:28px;
+	height:24px;
+	width:24px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image:url(../media/icon_refresh_small.png);
+}
+
+.dynTabWrapper .tabClose:hover{
+	background-image:url(../media/icon_close_small_hover.png);
+}
+
+.dynTabWrapper .tabRefresh:hover{
+	background-image:url(../media/icon_refresh_small_hover.png);
+}

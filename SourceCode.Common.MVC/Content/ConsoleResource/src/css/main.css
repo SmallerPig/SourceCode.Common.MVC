@@ -1,0 +1,109 @@
+*{
+	outline:none;
+	line-height:150%;
+	color:#343434;
+	font-family:微软雅黑;
+}
+
+a img{
+	border:0px none;
+}
+
+div{
+	position:relative;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	margin:0px;
+	height:100%;
+	background:#e2e2e2;
+}
+
+/*----------|----------*/
+
+#leftWrapper{
+	position:absolute;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	width:256px;
+	overflow:hidden;
+	background:#f5f5f5;
+}
+
+#menuArea{
+	position:absolute;
+	left:8px;
+	top:8px;
+	bottom:8px;
+	right:-17px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+#menuTreeWrapper{
+	margin:4px;
+	margin-right:12px;
+}
+
+#rightWrapper{
+	position:absolute;
+	left:256px;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	overflow:hidden;
+}
+
+#tabArea{
+	position:absolute;
+	left:8px;
+	top:8px;
+	right:8px;
+	height:32px;
+	overflow:hidden;
+}
+
+#tabInnerArea{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:32px;
+	width:9999px;
+}
+
+#tabInnerArea .tabItem[hidden]{
+	display:none;
+}
+
+#contentArea{
+	position:absolute;
+	left:8px;
+	top:41px;
+	right:8px;
+	bottom:8px;
+	background:#f5f5f5;
+}
+
+#contentArea .contentIframe{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:0px;
+	visibility:hidden;
+	border:0px none;
+}
+
+#contentArea .contentIframe[opened]{
+	visibility:visible;
+	height:100%;
+}
+
+#contentArea .contentIframe[hidden]{
+	display:none;
+}

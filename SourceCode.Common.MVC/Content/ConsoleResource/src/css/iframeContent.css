@@ -1,0 +1,161 @@
+*{
+	outline:none;
+	line-height:150%;
+	color:#343434;
+	font-family:微软雅黑;
+}
+
+a img{
+	border:0px none;
+}
+
+div{
+	position:relative;
+}
+
+body{
+	margin:0px;
+	padding:8px;
+}
+
+/*----------|----------*/
+
+.contentItemGroup{
+	padding:4px;
+	border-radius:8px;
+	background:#cccccc;
+	margin-bottom:8px;
+}
+
+	.contentItemGroup:last-child{
+		margin-bottom:0px;
+	}
+
+.contentItem{
+	padding:16px;
+	border-radius:4px;
+	background:#fff;
+	margin-bottom:1px;
+	padding-left:160px;
+	overflow:auto;
+}
+
+	.contentItem[complexContent]{
+		padding:16px;
+		padding-top:56px;
+		border-radius:4px;
+		background:#fff;
+		margin-bottom:1px;
+		overflow:auto;
+	}
+	
+	.contentItem[onlyContent]{
+		padding:16px;
+	}
+
+	.contentItem:last-child{
+		margin-bottom:0px;
+	}
+
+.contentItem + .tipItem{
+	font-size:12px;
+	color:#f00;
+	line-height:16px;
+	padding:8px 16px;
+	border-radius:4px;
+	padding-left:160px;
+	background:#fff;
+	margin-bottom:2px;
+	overflow:auto;
+}
+
+.contentItem + .tipItem:last-child{
+	margin-bottom:0px;
+}
+
+	.contentItem[complexContent] + .tipItem{
+		padding:8px 16px;
+	}
+	
+	.contentItem[onlyContent] + .tipItem{
+		padding:8px 16px;
+	}
+
+.contentItem > .contentItemTitle{
+	position:absolute;
+	left:16px;
+	width:128px;
+	height:16px;
+	top:24px;
+	text-align:right;
+	font-size:12px;
+	line-height:16px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+	.contentItem[complexContent] > .contentItemTitle{
+		position:absolute;
+		left:16px;
+		right:16px;
+		width:auto;
+		height:16px;
+		top:16px;
+		text-align:left;
+		font-size:12px;
+		line-height:16px;
+		overflow:hidden;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+		padding-bottom: 8px;
+		border-bottom: 1px dotted #ddd;
+	}
+	
+.contentItem > .contentItemInfoWrapper{
+	padding: 8px 0px;
+	line-height: 16px;
+	font-size: 12px;
+}
+
+/*样式修正*/
+.contentItem > .tableList{
+	width:100%;
+}
+
+.contentItem > textarea.inputText{
+	float:left;
+	min-width:100%;
+	max-width:100%;
+	height:64px;
+}
+
+.tableListItemEditIcon{
+	position:relative;
+	display:block;
+	height:16px;
+	width:32px;
+	margin:0px auto;
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-image:url(../media/icon_edit.png);
+}
+
+.tableListItemEditIcon:hover{
+	background-position:bottom center;
+}
+
+.tableListItemDeleteIcon{
+	position:relative;
+	display:block;
+	height:16px;
+	width:32px;
+	margin:0px auto;
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-image:url(../media/icon_delete.png);
+}
+
+.tableListItemDeleteIcon:hover{
+	background-position:bottom center;
+}

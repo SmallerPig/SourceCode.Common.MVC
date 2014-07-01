@@ -1,0 +1,56 @@
+.tableList{
+	position:relative;
+	width:100%;
+	border-collapse:collapse;
+	margin-bottom:1px;
+}
+
+.tableList:last-child{
+	margin-bottom:0px;
+}
+
+.tableList > * > tr > td{
+	padding:8px 16px;
+	text-align:center;
+	font-size:12px;
+	line-height:16px;
+	background-color:#fff;
+	border-bottom:1px solid #e2e2e2;
+}
+
+.tableList > thead > tr > td{
+	border-bottom:3px double #ccc;
+	font-weight:bolder;
+	color:#09F;
+}
+
+.tableList > tbody > tr:last-child > td{
+	border-bottom:0px none;
+}
+
+.tableList > tbody > tr:hover > td{
+	background-color:#fffcd5;
+}
+
+.tableList > * > tr > td[leftAlign]{
+	text-align:left;
+}
+
+.tableList > * > tr > td[rightAlign]{
+	text-align:right;
+}
+
+.tableList > * > tr > td::after{
+	content:"";
+	position:absolute;
+	background:#f1f1f1;
+	width:1px;
+	top:8px;
+	bottom:8px;
+	right:0px;
+}
+
+.tableList > * > tr > td:last-child::after{
+	display:none;
+}
+

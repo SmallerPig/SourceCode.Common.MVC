@@ -1,0 +1,77 @@
+*{
+	outline:none;
+	line-height:150%;
+	color:#343434;
+	font-family:微软雅黑;
+}
+
+a img{
+	border:0px none;
+}
+
+div{
+	position:relative;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	margin:0px;
+	height:100%;
+	background:#e2e2e2;
+}
+
+/*----------|----------*/
+
+#loginArea{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-92px 0px 0px -192px;
+	width:384px;
+	height:184px;
+	box-shadow:rgba(0,0,0,0.2) 0px 0px 8px;
+	background:rgba(245,245,245,0.8);
+	border-radius:4px;	
+}
+
+#loginTitle{
+	position:absolute;
+	padding:8px 24px;
+	left:8px;
+	right:8px;
+	top:32px;
+	background:#007caf;
+	border-radius:4px;
+	font-size:14px;
+	line-height:16px;
+	color:#fff;
+	box-shadow:inset rgba(0,0,0,0.4) 0px -48px 32px -32px;
+}
+
+#usernameInput{
+	position:absolute;
+	top:80px;
+	left:32px;
+	width:208px;
+	background-image:url(../media/icon_user.png);
+}
+
+#passwordInput{
+	position:absolute;
+	top:120px;
+	left:32px;
+	width:208px;
+	background-image:url(../media/icon_lock.png);
+}
+
+#loginSubmit{
+	position:absolute;
+	top:80px;
+	height:72px;
+	left:256px;
+	right:32px;
+	background-image:url(../media/icon_enterDoor_big.png);
+}
